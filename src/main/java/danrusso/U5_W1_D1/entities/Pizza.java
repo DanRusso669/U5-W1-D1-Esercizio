@@ -6,17 +6,13 @@ import lombok.Setter;
 @Getter
 @Setter
 
-public class Pizza {
-    private String name;
+public class Pizza extends Item {
     private String ingredients;
-    private int calories;
-    private double price;
+
 
     public Pizza(String name, String ingredients, int calories, double price) {
-        this.name = name;
+        super(name, calories, price);
         this.ingredients = ingredients;
-        this.calories = calories;
-        this.price = price;
     }
 
     @Override

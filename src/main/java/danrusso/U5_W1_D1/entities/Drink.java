@@ -5,15 +5,11 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Drink {
-    private String name;
-    private int calories;
-    private double price;
+public class Drink extends Item {
 
     public Drink(String name, int calories, double price) {
-        this.name = name;
-        this.calories = calories;
-        this.price = price;
+        super(name, calories, price);
+
     }
 
     @Override
